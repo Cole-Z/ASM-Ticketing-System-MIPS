@@ -91,7 +91,7 @@ finish_output:
 
 print_price:
 
-	li $v0, 4
+    li $v0, 4
     la $a0, line_break
     syscall
 
@@ -118,7 +118,7 @@ print_price:
     mfhi $a0
     syscall
 	
-	li $v0, 4
+    li $v0, 4
     la $a0, line_break
     syscall
 
