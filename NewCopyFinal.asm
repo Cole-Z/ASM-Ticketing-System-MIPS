@@ -46,7 +46,7 @@ main:
         # Calculate the ticket price based on age
         li $v0, 0
         blt $t0, 18, child_age            # If age is less than 18, treat as child
-        blt $t0, 65, adult_age            # If age is less than 65, treat as adult
+        blt $t0, 66, adult_age            # If age is less than 66, treat as adult
         j senior_age                      # Otherwise, treat as senior
 
     child_age:
@@ -67,13 +67,13 @@ main:
 
     senior_age:
         la $t1, ticket_prices
-		lw $t2, 8($t1)  # Load senior ticket price
+	lw $t2, 8($t1)  # Load senior ticket price
 
-		# Same as in adult_age, indicate an adult (or senior) presence
-		la $t3, adult_present
-		li $t4, 1
-		sw $t4, 0($t3)
-		j calculate_total
+	# Same as in adult_age, indicate an adult (or senior) presence
+	la $t3, adult_present
+	li $t4, 1
+	sw $t4, 0($t3)
+	j calculate_total
 
     calculate_total:
         lw $t3, total_price
