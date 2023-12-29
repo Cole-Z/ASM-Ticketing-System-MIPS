@@ -16,3 +16,10 @@ Something to note, if only children or youth ages are entered, such as 16, 17, 1
 Enter one age at a time to keep while loop running.
 
 To exit the ticketing system, enter '-1' to exit the loop and print the total price.
+
+### Image of output
+![image](https://github.com/Cole-Z/ASM-Final-Draft/assets/98670265/6330a8c1-6185-449b-8e46-ed7355b513fb)
+
+### Emulator
+Program is able to run on the MARS and QtSpim emulators for MIPS.
+
