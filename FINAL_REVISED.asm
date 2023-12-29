@@ -79,7 +79,7 @@ finish_output:
 
 # print and format the total price
 print_price:
-	  li $v0, 4
+    li $v0, 4
     la $a0, line_break
     syscall
 
