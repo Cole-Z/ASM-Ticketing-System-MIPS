@@ -5,7 +5,7 @@
 This is a simple ticketing system. User/User's will enter their 'age' and a ticket price will be generated. 
 
 ### ticket prices
-Adult: $10.00
+Adult: $10.00 \n
 Child/Youth: $9.00
 Seniors: $8.50 (15% off Adult price)
 
