@@ -60,11 +60,11 @@ main:
 
   senior_age:
         la $t1, ticket_prices            # load address of 'ticket_prices' array
-		    lw $t2, 8($t1)                   # load senior ticket price
-		    la $t3, adult_present            # add the adult flag here, since a senior is technically an adult. This is to avoid an extra adult ticket being added, if 2 children and a senior attended.
-		    li $t4, 1                        # make adult_present == true to avoid overcharge.
-		    sw $t4, 0($t3)                   # store update flag
-		    j calculate_total                # jump to calculation
+	lw $t2, 8($t1)                   # load senior ticket price
+	la $t3, adult_present            # add the adult flag here, since a senior is technically an adult. This is to avoid an extra adult ticket being added, if 2 children and a senior attended.
+	li $t4, 1                        # make adult_present == true to avoid overcharge.
+	sw $t4, 0($t3)                   # store update flag
+	j calculate_total                # jump to calculation
 
   calculate_total:
         lw $t3, total_price             # load 'total_price' 
